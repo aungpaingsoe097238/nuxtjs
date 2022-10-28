@@ -1,14 +1,20 @@
 <template>
   <div>
-     Blog
+     Blog <br>
+     {{ slug }}
   </div>
 </template>
 
 <script>
   export default {
-    created() {
-      console.log(this.$route.params.blog)
-    }
+    validate ({params}) {
+      return /^\d+$/.test(params.blog)
+    },
+    data() {
+      return {
+        slug: this.$route.params
+      }
+    },
   }
 </script>
 
