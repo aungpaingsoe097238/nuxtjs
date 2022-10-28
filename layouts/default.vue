@@ -1,17 +1,21 @@
 <template>
   <div>
-    <nuxt-link to="/">Index</nuxt-link>
-    <nuxt-link to="/about">About</nuxt-link>
-    <nuxt/>
+    <div>
+      <b-nav>
+        <b-nav-item>
+          <nuxt-link to="/">Home</nuxt-link>
+        </b-nav-item>
+        <b-nav-item>
+          <nuxt-link to="/about">About</nuxt-link>
+        </b-nav-item>
+      </b-nav>
+    </div>
+    <nuxt />
   </div>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {}
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
