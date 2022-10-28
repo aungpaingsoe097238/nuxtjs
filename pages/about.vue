@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  middleware : 'test',
   head() {
     return {
       title : 'About Page',
