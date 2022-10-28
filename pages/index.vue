@@ -10,7 +10,7 @@
 
     <button @click="change('Aung Paing Soe Change Name')">Change Name</button>
 
-    <button @click="action">action</button>
+    <button @click="action" class="btn btn-primary">action</button>
 
   </div>
 </template>

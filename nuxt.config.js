@@ -15,10 +15,26 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/css/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/bootstrap.js'],
+
+  // specify module rules for css and scss
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+    ],
+  },
+
+  // use these settings to use custom css
+  bootstrapVue: {
+    bootstrapCSS: false,
+    icons: true,
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
