@@ -1,13 +1,15 @@
-$theme-colors: (
-  'primary': #e917e9,
-  'secondary': #833bec,
-  'success': #1ce1ac,
-  'info': #ff7d50,
-  'warning': #ffbe0b,
-  'danger': #ff007f,
-  'light': #c0ccda,
-  'dark': #001738,
-);
+// $theme-colors: (
+//   'primary': #e917e9,
+//   'secondary': #833bec,
+//   'success': #1ce1ac,
+//   'info': #ff7d50,
+//   'warning': #ffbe0b,
+//   'danger': #ff007f,
+//   'light': #c0ccda,
+//   'dark': #001738,
+// );
 
+// @import '~/node_modules/bootswatch/dist/cosmo/_variables.scss';
 @import '~/node_modules/bootstrap/scss/bootstrap.scss';
+// @import '~/node_modules/bootswatch/dist/cosmo/_bootswatch.scss';
 @import '~/node_modules/animate.css/animate.min.css';
